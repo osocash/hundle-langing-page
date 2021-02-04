@@ -45,6 +45,7 @@ i:hover{
 }
 #content{
     display:flex ;  
+    flex-direction: row;
     margin-top: 50px;
     text-align: left;
     height: auto;
@@ -80,11 +81,13 @@ a{
     color: white;
 }
 
-@media screen and (max-width:480px)
+@media (max-width:500px)
 {
     #content{
-        display: block;
+        display: flex;
+        flex-direction: column;
         text-align: center;
+        
     }
     h1,p{
         width: 100%;
